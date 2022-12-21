@@ -31,6 +31,11 @@ class Priority extends Model
         'low'
     ];
 
+    public function tickets()
+    {
+        return $this->hasMany('App\Models\Priority', 'priority_id');
+    }
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()

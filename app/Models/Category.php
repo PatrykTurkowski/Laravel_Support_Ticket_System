@@ -32,6 +32,11 @@ class Category extends Model
         'technical question',
     ];
 
+    public function tickets()
+    {
+        return $this->belongsToMany('App\Models\Ticket');
+    }
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()

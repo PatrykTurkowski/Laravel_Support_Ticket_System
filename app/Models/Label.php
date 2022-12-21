@@ -30,6 +30,11 @@ class Label extends Model
         'enhancement',
     ];
 
+    public function tickets()
+    {
+        return $this->belongsToMany('App\Models\Ticket');
+    }
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()

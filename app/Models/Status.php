@@ -32,6 +32,11 @@ class Status extends Model
         'suspended',
     ];
 
+    public function tickets()
+    {
+        return $this->hasMany('App\Models\Status', 'status_id');
+    }
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()

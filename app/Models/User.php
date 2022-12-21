@@ -45,6 +45,15 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function tickets()
+    {
+        return $this->hasMany('App\Ticket', 'assigned_agent_id');
+    }
+    public function creatorTickets()
+    {
+        return $this->hasMany('App\Ticket', 'user_id');
+    }
+
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
