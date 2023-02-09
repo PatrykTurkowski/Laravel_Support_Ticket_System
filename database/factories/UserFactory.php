@@ -22,7 +22,8 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'role' => RoleEnum::USER->value,
+            'password' => '$2y$10$xRAR2ckNQh3srR./6TpGHOXcTBYIbPu.A85ETH2xq4cfmV2BbA.tG', // password
             'remember_token' => Str::random(10),
         ];
     }
@@ -36,7 +37,7 @@ class UserFactory extends Factory
                 'email' => 'admin@admin.com',
                 'email_verified_at' => now(),
                 'role' => RoleEnum::ADMIN->value,
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+                'password' => '$2y$10$xRAR2ckNQh3srR./6TpGHOXcTBYIbPu.A85ETH2xq4cfmV2BbA.tG',
                 // password
                 'remember_token' => Str::random(10),
 
@@ -52,7 +53,7 @@ class UserFactory extends Factory
                 'email' => 'agent@agent.com',
                 'email_verified_at' => now(),
                 'role' => RoleEnum::AGENT->value,
-                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+                'password' => '$2y$10$xRAR2ckNQh3srR./6TpGHOXcTBYIbPu.A85ETH2xq4cfmV2BbA.tG',
                 // password
                 'remember_token' => Str::random(10),
             ];

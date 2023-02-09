@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourDent</title>
+    <script src="https://kit.fontawesome.com/84f36aaf8f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+<body>
+    <nav>
+	<div class="wrapper nav">
+		<a href="index.html" class="nav__logo-box">
+			<div class="nav__logo">
+				<i class="fa-solid fa-tooth"></i>
+				<span class="nav__logo-name">YourDent</span>
+			</div>
+		</a>
+		<!-- NAWIGACJA MOBILNA -->
+		<div class="nav__mobile-box">
+			<button class="nav__mobile-icon">MENU</button>
+			<ul class="nav__mobile-items-box">
+				<a href="" class="nav__item-mobile">Oferta</a>
+				<a href="" class="nav__item-mobile">Leczenie</a>
+				<a href="" class="nav__item-mobile">Zespół</a>
+				<a href="" class="nav__item-mobile">FAQ</a>
+				<a href="" class="nav__item-mobile">Kontakt</a>
+			</ul>
+		</div>
+		<!-- NAWIGACJA DESKTOP -->
+		<div class="nav__items-box">
+			<a href="" class="nav__item">Oferta</a>
+			<a href="" class="nav__item">Leczenie</a>
+			<a href="" class="nav__item">Zespół</a>
+			<a href="" class="nav__item">FAQ</a>
+			<a href="" class="nav__item">Kontakt</a>
+		</div>
+		<div class="nav__login-box">
+			<a href="login.html" class="nav__login">Login</a>
+		</div>
+   		<div class="nav__language-box">
+			<button class="nav__language-chosen">PL</button>
+			<div class="nav__language-btn-container">
+				<button class="nav__language-btn nav__language--pl">PL</button>
+        		<button class="nav__language-btn nav__language--eng">EN</button>
+			</div>
+    	</div>
+	</a>
+</nav>
+
+    <main class="login">
+        <section class="login__container">
+            <div class="wrapper">
+                <h1 class="login__title">Zaloguj się na swoje konto</h1>
+                <div class="login__box">
+                    <label for="login" class="login__label">Adres email:</label>
+                    <input type="email" id="login" class="login__input">
+                    <label for="password" class="login__label">Hasło:</label>
+                    <input type="password" id="password" class="login__input">
+                    <button class="login__btn">Zaloguj się</button>
+                </div>
+                <div class="login__text-box">
+                    <a href="password.html" class="login__text--link">Nie pamiętasz hasła?</a>
+                    <p class="login__text">Nie masz jeszcze konta? <a href="register.html" class="login__text--link">Zarejestruj się</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__container">
+            <div class="footer__localization-box">
+                <h3 class="footer__title">Lokalizacja:</h3>
+                <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.4400583843694!2d19.932970469123095!3d50.05354036370706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sZamek%20Kr%C3%B3lewski%20na%20Wawelu!5e0!3m2!1spl!2spl!4v1667033593172!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer__text-containers">
+                <div class="footer__text-container footer__text-adress">
+                    <h3 class="footer__title">Adres Kliniki:</h3>
+                    <p class="footer__text">ul. Prosta 2, 30 - 123, Kraków</p>
+                </div>
+                <div class="footer__text-container footer__text-contact">
+                    <h3 class="footer__title">Nr Kontaktowy:</h3>
+                    <p class="footer__text">+48 123 - 456 - 789</p>
+                    <p class="footer__text">+48 125 - 54 - 28</p>
+                    <h3 class="footer__title footer__title--email">EMAIL:</h3>
+                    <p class="footer__text">yourdent12345@dent.com</p>
+                </div>
+                <div class="footer__text-container footer__text-hours">
+                    <h3 class="footer__title">Godziny otwarcia:</h3>
+                    <p class="footer__text">Poniedziałek: 9:00 - 17:00</p>
+                    <p class="footer__text">Wtorek: 7:00 - 15:00</p>
+                    <p class="footer__text">Środa: 7:00 - 15:00</p>
+                    <p class="footer__text">Czwartek: 9:00 - 17:00</p>
+                    <p class="footer__text">Piątek: 9:00 - 14:00</p>
+                    <p class="footer__text">Sobota: 11:00 - 14:00</p>
+                    <p class="footer__text">Niedziela: Nieczynne</p>
+                </div>
+            </div>
+        </div>
+        <p class="footer__footer">&copy; Yourdent | Made by: Adam & Patryk </p>
+    </div>
+</footer>
+    <script src="./dist/js/script.min.js"></script>
+</body>
+</html>

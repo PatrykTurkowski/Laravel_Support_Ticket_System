@@ -22,6 +22,10 @@ class DatabaseSeeder extends Seeder
             LabelSeeder::class,
             PrioritySeeder::class,
             StatusSeeder::class,
+            TicketSeeder::class,
+            CategoryTicketSeeder::class,
+            LabelTicketSeeder::class,
+            CommentSeeder::class,
 
         ]);
     }

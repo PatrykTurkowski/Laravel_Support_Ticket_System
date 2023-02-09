@@ -1,0 +1,6 @@
+1.11 
+sn 250kcal
+ob 825kcal
+kol 480kcal
+-----------
+1555kcal

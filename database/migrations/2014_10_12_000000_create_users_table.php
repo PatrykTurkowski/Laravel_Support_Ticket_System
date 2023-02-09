@@ -22,6 +22,7 @@ return new class extends Migration
             $table->enum('role', RoleEnum::valueArray())->default(RoleEnum::USER->value);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
         });

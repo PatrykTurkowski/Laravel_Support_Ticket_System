@@ -1,0 +1,33 @@
+<?php
+
+namespace Tests\Feature\Admin;
+
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Tests\TestCase;
+
+class LoginTest extends TestCase
+{
+    /**
+     * __construct
+     *
+     * logged in as admin
+     * 
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->actingAs($this->admin());
+    }
+    /**
+     * A basic feature test example.
+     *
+     * @return void
+     */
+    // public function testCheckIfYouCanGoToTheLoginForm()
+    // {
+    //     $response = $this->get('/login');
+
+    //     $response->assertStatus(302);
+    // }
+}

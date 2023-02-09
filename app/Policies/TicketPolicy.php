@@ -2,8 +2,10 @@
 
 namespace App\Policies;
 
+use App\Enums\RoleEnum;
 use App\Models\Ticket;
 use App\Models\User;
+use App\Rules\isAgent;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class TicketPolicy
@@ -18,7 +20,7 @@ class TicketPolicy
      */
     public function viewAny(User $user)
     {
-        //
+        return true;
     }
 
     /**
@@ -30,7 +32,11 @@ class TicketPolicy
      */
     public function view(User $user, Ticket $ticket)
     {
-        //
+
+        if ($user->id != $ticket->user_id and $user->id != $ticket->assigned_agent_id) {
+            return false;
+        }
+        return true;
     }
 
     /**
@@ -41,7 +47,7 @@ class TicketPolicy
      */
     public function create(User $user)
     {
-        //
+        return $user->role != RoleEnum::AGENT->value;
     }
 
     /**
@@ -53,7 +59,10 @@ class TicketPolicy
      */
     public function update(User $user, Ticket $ticket)
     {
-        //
+        if ($user->id != $ticket->assigned_agent_id) {
+            return false;
+        }
+        return $user->role == RoleEnum::AGENT->value;
     }
 
     /**
@@ -65,7 +74,7 @@ class TicketPolicy
      */
     public function delete(User $user, Ticket $ticket)
     {
-        //
+        return false;
     }
 
     /**
@@ -77,7 +86,7 @@ class TicketPolicy
      */
     public function restore(User $user, Ticket $ticket)
     {
-        //
+        return false;
     }
 
     /**
@@ -89,6 +98,6 @@ class TicketPolicy
      */
     public function forceDelete(User $user, Ticket $ticket)
     {
-        //
+        return false;
     }
 }

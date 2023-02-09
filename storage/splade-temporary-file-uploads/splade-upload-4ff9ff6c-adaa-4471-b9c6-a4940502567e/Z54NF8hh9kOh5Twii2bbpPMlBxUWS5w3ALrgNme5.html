@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourDent</title>
+    <script src="https://kit.fontawesome.com/84f36aaf8f.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+<body>
+    <nav>
+	<div class="wrapper nav">
+		<a href="index.html" class="nav__logo-box">
+			<div class="nav__logo">
+				<i class="fa-solid fa-tooth"></i>
+				<span class="nav__logo-name">YourDent</span>
+			</div>
+		</a>
+		<!-- NAWIGACJA MOBILNA -->
+		<div class="nav__mobile-box">
+			<button class="nav__mobile-icon">MENU</button>
+			<ul class="nav__mobile-items-box">
+				<a href="" class="nav__item-mobile">Oferta</a>
+				<a href="" class="nav__item-mobile">Leczenie</a>
+				<a href="" class="nav__item-mobile">Zespół</a>
+				<a href="" class="nav__item-mobile">FAQ</a>
+				<a href="" class="nav__item-mobile">Kontakt</a>
+			</ul>
+		</div>
+		<!-- NAWIGACJA DESKTOP -->
+		<div class="nav__items-box">
+			<a href="" class="nav__item">Oferta</a>
+			<a href="" class="nav__item">Leczenie</a>
+			<a href="" class="nav__item">Zespół</a>
+			<a href="" class="nav__item">FAQ</a>
+			<a href="" class="nav__item">Kontakt</a>
+		</div>
+		<div class="nav__login-box">
+			<a href="login.html" class="nav__login">Login</a>
+		</div>
+   		<div class="nav__language-box">
+			<button class="nav__language-chosen">PL</button>
+			<div class="nav__language-btn-container">
+				<button class="nav__language-btn nav__language--pl">PL</button>
+        		<button class="nav__language-btn nav__language--eng">EN</button>
+			</div>
+    	</div>
+	</a>
+</nav>
+
+    
+    <!-- HEADER -->
+    <header class="header" id="home">
+        <div class="wrapper">
+            <div class="header__box">
+                <div class="header__img"></div>
+                <div class="header__img-shadow"></div>
+                <div class="header__text-box">
+                    <h1 class="header__text-title"> <span class="header__text-title--company">YourDent</span> bliżej Ciebie</h1>
+                    <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci et, quasi vero eaque deleniti repellendus accusantium. Iste, ad impedit!</p>
+                    <a href="#main" class="header__text-btn">Odkryj więcej</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <!-- OFFER -->
+        <section class="offer">
+            <div class="wrapper offer__container">
+                <h1 class="offer__title">Oferta</h1>
+                <div class="offer__card-container">
+                    <div class="offer__card offer__card--one">
+                        <img class="offer__card-img offer__card-img--one" src="../dist/img/dentist-offer-one_640.jpg" alt="Szczoteczka do zębów z pastą"></img>
+                        <div class="offer__card-text-box">
+                            <h2 class="offer__card-title">Diagnostyka</h2>
+                            <p class="offer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, repellat?</p>
+                            <ul class="offer__card-list">
+                                <li class="offer__card-list-element"><span class="offer__card-element">RTG</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Mikrotomografia komputerowa</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Tomografia komputerowa</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Konsultacja lekarska</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offer__card offer__card--two">
+                        <img class="offer__card-img offer__card-img--two" src="../dist/img/dentist-offer-two_640.jpg" alt="Przyrządy leczenia dentystycznego"></img>
+                        <div class="offer__card-text-box">
+                            <h2 class="offer__card-title">Pedodoncja</h2>
+                            <p class="offer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, repellat?</p>
+                            <ul class="offer__card-list">
+                                <li class="offer__card-list-element"><span class="offer__card-element">Lakowanie</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Fluoryzacja</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Światłoutwardzalne wypełnienie kompozytowe</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Lapisowanie</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="offer__card offer__card--three">
+                        <img class="offer__card-img offer__card-img--three" src="../dist/img/dentist-offer-three_640.jpg" alt="Artystyczne przedstawienie procesu naprawy zęba"></img>
+                        <div class="offer__card-text-box">
+                            <h2 class="offer__card-title">Protetyka</h2>
+                            <p class="offer__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, repellat?</p>
+                            <ul class="offer__card-list">
+                                <li class="offer__card-list-element"><span class="offer__card-element">Korona protetyczna</span> </li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Proteza szkieletowa</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Proteza akrylowa</span></li>
+                                <li class="offer__card-list-element"><span class="offer__card-element">Odbudowa zęba wkładem koronowo-korzeniowym</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="offer__btn">ZOBACZ PEŁNĄ OFERTĘ</a>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="wrapper about-us__container">
+                <img src="../dist/img/doctor_640.jpg" alt="Dentysta podczas pracy" class="about-us__img">
+                <div class="about-us__text-container">
+                    <h2 class="about-us__title">Dlaczego my?</h2>
+                    <ul class="about-us__list">
+                        <li class="about-us__list-element"><span class="about-us__list-element--text jd">Specjalizujemy się w ortodoncji już od 25 lat</span></li>
+                        <li class="about-us__list-element"><span class="about-us__list-element--text">Jesteśmy młodym i nowoczesnym zespołem korzystającym z najnowszych metod leczenia</span></li>
+                        <li class="about-us__list-element"><span class="about-us__list-element--text">Masz dostęp do wielu specjalistów w jednym miejscu</span></li>
+                        <li class="about-us__list-element"><span class="about-us__list-element--text">Posiadamy najnowszy sprzęt zapewniający precyzyjną diagnostyke i gwarancję najwyższej jakości</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="wrapper contact__container">
+                <h2 class="contact__title">Skontaktuj się z nami</h2>
+                <form class="contact__form">
+                    <div class="contact__form-box">
+                        <label for="name" class="contact__form-title">Imię i Nazwisko:</label>
+                        <input type="text" id="name" class="contact__form-input">
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="email" class="contact__form-title">Email:</label>
+                        <input type="email" id="email" class="contact__form-input">
+                    </div>
+                    <div class="contact__form-box">
+                        <label for="message" class="contact__form-title">Wiadomość:</label>
+                        <textarea name="message" id="message" class="contact__form-textarea"></textarea>
+                    </div>
+                    <button class="contact__form-btn">Wyślij</button>
+                </form>
+            </div>
+        </section>
+        <section class="newsletter" id="newsletter">
+            <div class="wrapper newsletter__container">
+                <div class="newsletter__text-box">
+                    <p class="newsletter__text">Zapisz się na newsletter:</p>
+                </div>
+                <div class="newsletter__form-box">
+                    <input type="email" class="newsletter__input" placeholder="Wpisz swój email">
+                    <button class="newsletter__btn">Zapisz się</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer__container">
+            <div class="footer__localization-box">
+                <h3 class="footer__title">Lokalizacja:</h3>
+                <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.4400583843694!2d19.932970469123095!3d50.05354036370706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b6d053619f5%3A0xacb9dfc4d67fa598!2sZamek%20Kr%C3%B3lewski%20na%20Wawelu!5e0!3m2!1spl!2spl!4v1667033593172!5m2!1spl!2spl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer__text-containers">
+                <div class="footer__text-container footer__text-adress">
+                    <h3 class="footer__title">Adres Kliniki:</h3>
+                    <p class="footer__text">ul. Prosta 2, 30 - 123, Kraków</p>
+                </div>
+                <div class="footer__text-container footer__text-contact">
+                    <h3 class="footer__title">Nr Kontaktowy:</h3>
+                    <p class="footer__text">+48 123 - 456 - 789</p>
+                    <p class="footer__text">+48 125 - 54 - 28</p>
+                    <h3 class="footer__title footer__title--email">EMAIL:</h3>
+                    <p class="footer__text">yourdent12345@dent.com</p>
+                </div>
+                <div class="footer__text-container footer__text-hours">
+                    <h3 class="footer__title">Godziny otwarcia:</h3>
+                    <p class="footer__text">Poniedziałek: 9:00 - 17:00</p>
+                    <p class="footer__text">Wtorek: 7:00 - 15:00</p>
+                    <p class="footer__text">Środa: 7:00 - 15:00</p>
+                    <p class="footer__text">Czwartek: 9:00 - 17:00</p>
+                    <p class="footer__text">Piątek: 9:00 - 14:00</p>
+                    <p class="footer__text">Sobota: 11:00 - 14:00</p>
+                    <p class="footer__text">Niedziela: Nieczynne</p>
+                </div>
+            </div>
+        </div>
+        <p class="footer__footer">&copy; Yourdent | Made by: Adam & Patryk </p>
+    </div>
+</footer>
+    
+    <script src="./dist/js/script.min.js"></script>
+</body>
+</html>

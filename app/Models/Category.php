@@ -4,12 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Kirschbaum\PowerJoins\PowerJoins;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
 
 class Category extends Model
 {
-    use HasFactory, LogsActivity;
+    use HasFactory, LogsActivity, PowerJoins, SoftDeletes;
 
     public $timestamps = false;
     /**
@@ -40,7 +42,8 @@ class Category extends Model
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-            ->logOnly(['name', 'text']);
+            ->logOnly(['name', 'text'])
+            ->useLogName('category');
         // Chain fluent methods for configuration options
     }
 }

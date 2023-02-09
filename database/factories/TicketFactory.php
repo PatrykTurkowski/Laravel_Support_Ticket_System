@@ -2,8 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
-use App\Models\Label;
+use App\Enums\RoleEnum;
 use App\Models\Priority;
 use App\Models\Status;
 use App\Models\User;
@@ -23,6 +22,7 @@ class TicketFactory extends Factory
     {
 
         $user = User::inRandomOrder()->first();
+        $agent = User::where('role', RoleEnum::AGENT->value)->inRandomOrder()->first();
         $priority = Priority::inRandomOrder()->first();
         $status = Status::inRandomOrder()->first();
         return [
@@ -30,7 +30,7 @@ class TicketFactory extends Factory
             'description' => fake()->paragraph(2),
             'priority_id' => $priority->id,
             'status_id' => $status->id,
-            'assigned_agent_id' => $user->id,
+            'assigned_agent_id' => $agent->id,
             'user_id' => $user->id,
         ];
     }

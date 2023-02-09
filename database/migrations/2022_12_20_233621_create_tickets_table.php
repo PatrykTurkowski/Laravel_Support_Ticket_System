@@ -17,10 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('title', 255);
             $table->text('description');
-            $table->foreignId('priority_id')->constrained('priorities');
-            $table->foreignId('status_id')->constrained('statuses');
-            $table->foreignId('assigned_agent_id')->nullable()->constrained('users');
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('priority_id')->constrained('priorities')->onDelete('cascade');
+            $table->foreignId('status_id')->default(1)->constrained('statuses')->onDelete('cascade');
+            $table->foreignId('assigned_agent_id')->nullable()->constrained('users')->onDelete('cascade');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
